@@ -51,111 +51,161 @@ header
           align-items: center
           &.active
             background: #E7EBF3
-#s-one,#s-two
-  min-height: 600px
-section
-  .s-block
-    display: flex
-    .b-block
-      width: 50%
-      .content
-        padding: 15px
+#s-two,#s-three
+  background: #F1F3F4
+.s-block
+  display: flex
+  &_one
     .left-wrap
-      &.b-color
-        background-color: $color
-        color: #fff
       padding-top: 220px
       padding-bottom: 120px
-      .content
-        padding: 0 45px
-        .form-wrap
-          input[type="text"]
-            background-color: #4C5364
-            width: 230px
-            margin-right: 30px
-            &::placeholder
-              color: #ffffff
-          .btn
-            margin-top: 15px
-            display: block
-    .right-wrap
-      .slider-wrap
-        .slider
-          position: relative
-          img
-            height: 100%
-            width: auto
-          &::before
-            content: ''
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            background-image: url('../../img/banner/cloud.png')
-            background-repeat: no-repeat
-            background-size: cover
-          .title
-            position: absolute
-            bottom: 0
-            padding: 15px
-            width: 80%
-        .owl-nav
-          display: flex
-          flex-direction: column
-          align-items: end
-          margin-right: 55px
-          position: absolute
-          bottom: 55px
-          width: 95%
-          .owl-next,.owl-prev
-            background-color: #dee2eb
-            width: 60px
-            height: 60px
-    &_two
-      padding-top: 50px
-      background: #F1F3F4
-      .left-wrap
-        width: 30%
-        padding-top: 0
-        margin-top: 0
-        .news-wrap
-          background-color: $color
-          color: #ffffff
-          position: relative
-          &_title
-            margin: 0
-            padding: 50px 0 40px 40px
-          &_list-wrap
-            max-height: 720px
-            overflow-y: scroll
-          .b-news
-            background-color: #444B5E
-            width: 90%
-            margin: 15px auto 15px
-            .content
-              padding: 40px
-            .title
-              font-size: 20px
-              text-transform: uppercase
-          a.link-more
+    .content
+      padding: 0 45px
+  .b-block
+    width: 50%
+  .left-wrap
+    &.b-color
+      background-color: $color
+      color: #fff
+    .content
+      .form-wrap
+        input[type="text"]
+          background-color: #4C5364
+          width: 230px
+          margin-right: 30px
+          &::placeholder
             color: #ffffff
-            position: absolute
-            right: 5%
-            top: 10%
-      .right-wrap
-        width: 70%
-        .cards
+        .btn
+          margin-top: 15px
+          display: block
+  .right-wrap
+    .slider-wrap
+      .slider
+        position: relative
+        img
+          height: 100%
+          width: auto
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background-image: url('../../img/banner/cloud.png')
+          background-repeat: no-repeat
+          background-size: cover
+        .title
+          position: absolute
+          bottom: 0
+          padding: 15px
+          width: 80%
+      .owl-nav
+        display: flex
+        flex-direction: column
+        align-items: end
+        margin-right: 55px
+        position: absolute
+        bottom: 55px
+        width: 95%
+        .owl-next,.owl-prev
+          background-color: #dee2eb
+          width: 60px
+          height: 60px
+  &_two
+    padding-top: 50px
+    .left-wrap
+      width: 30%
+      padding-top: 0
+      margin-top: 0
+      .news-wrap
+        background-color: $color
+        color: #ffffff
+        position: relative
+        min-height: 850px
+        &_title
+          margin: 0
+          padding: 50px 0 40px 40px
+        &_list-wrap
+          max-height: 700px
+          overflow-y: scroll
+        .b-news
+          background-color: #444B5E
+          width: 90%
+          margin: 15px auto 15px
+          .content
+            padding: 40px
+          .title
+            font-size: 20px
+            text-transform: uppercase
+        a.link-more
+          color: #ffffff
+          position: absolute
+          right: 5%
+          top: 10%
+    .right-wrap
+      width: 70%
+      .cards
+        display: flex
+        flex-wrap: wrap
+        flex-grow: 1
+        .card
+          flex: 0 0 33%
+          background: #FBFCFF
+          box-shadow: 0px 9px 25px 4px rgba(156, 173, 202, 0.18)
+          margin-bottom: 50px
+          min-height: 400px
           display: flex
-          flex-wrap: wrap
-          flex-grow: 1
-          .card
-            flex: 0 0 33%
-            background: #FBFCFF
-            box-shadow: 0px 9px 25px 4px rgba(156, 173, 202, 0.18)
-            margin-bottom: 50px
-            min-height: 400px
-            .title
-              padding: 40px
-              text-transform: uppercase
-              vertical-align: bottom
+          .title
+            align-self: flex-end
+            padding: 40px
+            margin: 0
+            text-transform: uppercase
+            display: inline-block
+  &_three
+    padding-bottom: 50px
+    overflow: hidden
+    .b-block
+      box-shadow: 0px 9px 25px 4px rgba(156, 173, 202, 0.18)
+    .content
+      position: relative
+      .title
+        position: absolute
+        bottom: 50px
+        left: 50px
+footer
+  background-color: $color
+  color: #ffffff
+  padding: 55px
+  min-height: 200px
+  .title
+    font-size: 20px
+    font-weight: 700
+  .left-wrap
+    .contact-wrap
+      font-weight: 400
+      .b-block
+        position: relative
+        width: 100%
+        display: block
+        float: left
+        .title
+          width: 150px
+        p
+          float: left
+      a
+        color: #fff
+        display: block
+        margin: 10px 0
+  .right-wrap
+    text-align: right
+    color: rgba(#FFFFFF, .5)
+    .counter-wrap
+      margin-bottom: 50px
+    .copy
+      a
+        color: rgba(#FFFFFF, .5)
+        line-height: .9em
+      img
+        margin-left: 5px
+        vertical-align: bottom
