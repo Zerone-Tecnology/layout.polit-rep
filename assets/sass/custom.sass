@@ -129,6 +129,14 @@ header
         &_list-wrap
           max-height: 700px
           overflow-y: scroll
+          &::-webkit-scrollbar 
+            width: 8px
+          &::-webkit-scrollbar-track 
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+            border-radius: 15px
+          &::-webkit-scrollbar-thumb 
+            background-color: #8A94A4
+            border-radius: 15px
         .b-news
           background-color: #444B5E
           width: 90%
@@ -156,6 +164,7 @@ header
           margin-bottom: 50px
           min-height: 400px
           display: flex
+          width: 33%
           .title
             align-self: flex-end
             padding: 40px

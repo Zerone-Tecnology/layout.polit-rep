@@ -136,22 +136,32 @@ ul ul {
 
 h1 {
   font-size: 54px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 42px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 30px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 27px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
 }
 
 h5 {
   font-size: 22px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
 }
 
 .btn {
@@ -413,6 +423,21 @@ header .header_top .lang-wrap ul.lang li.active {
   overflow-y: scroll;
 }
 
+.s-block_two .left-wrap .news-wrap_list-wrap::-webkit-scrollbar {
+  width: 8px;
+}
+
+.s-block_two .left-wrap .news-wrap_list-wrap::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.s-block_two .left-wrap .news-wrap_list-wrap::-webkit-scrollbar-thumb {
+  background-color: #8A94A4;
+  border-radius: 15px;
+}
+
 .s-block_two .left-wrap .news-wrap .b-news {
   background-color: #444B5E;
   width: 90%;
@@ -462,6 +487,7 @@ header .header_top .lang-wrap ul.lang li.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 33%;
 }
 
 .s-block_two .right-wrap .cards .card .title {
