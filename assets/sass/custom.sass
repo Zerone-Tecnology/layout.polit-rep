@@ -65,8 +65,9 @@ header
     width: 50%
   .left-wrap
     &.b-color
-      background-color: $color
-      color: #fff
+      background: linear-gradient(131.57deg, #FDFCFF 2.48%, #D2D0D7 96.33%)
+      box-shadow: 0px 9px 25px 4px rgba(156, 173, 202, 0.18)
+      color: $text
     .content
       .form-wrap
         input[type="text"]
@@ -129,6 +130,7 @@ header
         &_list-wrap
           max-height: 700px
           overflow-y: scroll
+          margin-right: 5px
           &::-webkit-scrollbar 
             width: 8px
           &::-webkit-scrollbar-track 
@@ -150,7 +152,7 @@ header
           color: #ffffff
           position: absolute
           right: 5%
-          top: 10%
+          top: 50px
     .right-wrap
       width: 70%
       .cards
@@ -171,6 +173,18 @@ header
             margin: 0
             text-transform: uppercase
             display: inline-block
+          &:nth-child(1)
+            z-index: 6
+          &:nth-child(2)
+            z-index: 5
+          &:nth-child(3)
+            z-index: 4
+          &:nth-child(4)
+            z-index: 3
+          &:nth-child(5)
+            z-index: 2
+          &:nth-child(6)
+            z-index: 1
   &_three
     padding-bottom: 50px
     overflow: hidden

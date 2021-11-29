@@ -111,7 +111,7 @@ ul li {
 }
 
 ul li:hover {
-  color: #FB6056;
+  color: #BB3D44;
 }
 
 ul li:hover ul {
@@ -175,7 +175,7 @@ h5 {
 }
 
 .btn-red {
-  background-color: #FB6056;
+  background-color: #BB3D44;
   color: #1D2842;
   border: none;
 }
