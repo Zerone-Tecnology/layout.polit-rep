@@ -110,11 +110,11 @@ ul li {
   padding: 15px;
 }
 
-ul li:hover {
+ul li:hover a {
   color: #BB3D44;
 }
 
-ul li:hover ul {
+ul li:hover a ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

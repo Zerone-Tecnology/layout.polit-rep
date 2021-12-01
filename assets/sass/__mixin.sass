@@ -1,0 +1,5 @@
+@mixin media($minmax, $media) 
+	@each $screen, $resolution in $screen 
+		@if $media == $screen 
+			@media only screen and (#{$minmax}-width: $resolution) 
+				@content;
