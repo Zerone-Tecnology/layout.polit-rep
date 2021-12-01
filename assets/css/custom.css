@@ -409,6 +409,10 @@ header .header_top .lang-wrap ul.lang li:hover {
   color: #1D2842;
 }
 
+.s-block .left-wrap .content h1 {
+  text-transform: uppercase;
+}
+
 .s-block .left-wrap .content .form-wrap input[type="text"] {
   background-color: #FDFCFD;
   width: 200px;
