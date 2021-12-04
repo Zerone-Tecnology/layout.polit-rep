@@ -1,0 +1,91 @@
+// fonts
+@import './__font.sass'
+
+// settings
+@import './__variable.sass'
+@import './__mixin.sass'
+@import './__settings.sass'
+
+// components
+@import './components/__buttons.sass'
+@import './components/__card.sass'
+@import './components/__form.sass'
+@import './components/__navigation.sass'
+@import './components/__news.sass'
+@import './components/__section.sass'
+
+body
+  font-family: 'Roboto', serif
+  font-weight: 400
+  font-size: 18px
+  margin: 0
+  padding: 0
+  background-color: #F7F7F7
+a
+  color: $color
+  text-decoration: none
+  // &:hover
+  //   text-decoration: underline
+ul
+  display: flex
+  list-style-type: none
+  position: relative
+  margin: 0
+  padding: 0
+  li
+    margin: 0
+    padding: 15px
+    &:hover
+      > a
+        color: $accent
+      ul
+        display: flex
+  ul
+    display: none
+    position: absolute
+    background-color: #ffffff
+    z-index: 2
+    top: 100%
+    left: 0
+    padding: 15px
+    flex-direction: column
+
+h1
+  font-size: $heading-1
+  font-family: 'PT Sans Narrow', sans-serif
+  font-weight: 700
+h2
+  font-size: $heading-2
+  font-family: 'PT Sans Narrow', sans-serif
+  font-weight: 700
+h3
+  font-size: $heading-3
+  font-family: 'PT Sans Narrow', sans-serif
+  font-weight: 700
+h4
+  font-size: $heading-4
+  font-family: 'PT Sans Narrow', sans-serif
+  font-weight: 700
+h5
+  font-size: $heading-5
+  font-family: 'PT Sans Narrow', sans-serif
+  font-weight: 700
+p
+  line-height: 1.6em
+.btn
+  border-radius: 8px
+  padding: 20px 30px
+  font-size: 18px
+  &:hover
+    cursor: pointer
+  &-red
+    background-color: $accent
+    color: #fff
+    border: none
+form
+  input[type="text"]
+    padding: 20px 30px
+    border-radius: 8px
+    border: none
+    font-size: 18px
+    color: #ffffff

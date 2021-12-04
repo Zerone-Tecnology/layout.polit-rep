@@ -1,0 +1,41 @@
+// Clear default browser settings
+@import './__clear.sass'
+@import './__variable.sass'
+
+h1
+	font-size: $heading-1
+h2
+	font-size: $heading-2
+h3
+	font-size: $heading-3
+h4
+	font-size: $heading-4
+h5
+	font-size: $heading-5
+
+.text
+	&--default
+		font-size: $text-size-1
+
+	&--accent
+		font-size: $text-size-2
+
+.container
+	transition: width 0.7s
+	width: $screen-xl
+	height: auto
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+
+	@include media('max', 'lg') 
+		width: $screen-md
+
+	@include media('max', 'md') 
+		width: $screen-sm
+
+	@include media('max', 'sm') 
+		width: $screen-xs
+
+	@include media('max', 'xs') 
+		width: $screen-xs
