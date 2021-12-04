@@ -4,6 +4,7 @@
 // settings
 @import './__variable.sass'
 @import './__mixin.sass'
+@import './__settings.sass'
 
 // components
 @import './components/__buttons.sass'
@@ -34,8 +35,9 @@ ul
   li
     margin: 0
     padding: 15px
-    &:hover a
-      color: $accent
+    &:hover
+      > a
+        color: $accent
       ul
         display: flex
   ul
@@ -68,7 +70,8 @@ h5
   font-size: $heading-5
   font-family: 'PT Sans Narrow', sans-serif
   font-weight: 700
-
+p
+  line-height: 1.6em
 .btn
   border-radius: 8px
   padding: 20px 30px
