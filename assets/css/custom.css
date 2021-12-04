@@ -148,7 +148,7 @@ h5 {
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
   width: 1770px;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,6 +189,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  background-color: #F7F7F7;
 }
 
 a {
@@ -354,6 +355,7 @@ a.next::before {
 header {
   margin: 0 auto;
   padding: 0 60px;
+  background-color: #ffffff;
 }
 
 header .header_top {
@@ -943,11 +945,9 @@ header .header_top .lang-wrap ul.lang li:hover {
   position: relative;
 }
 
-.b-page .tab.active {
-  background-color: #F7F7F7;
-}
-
-.b-page .tab.active h4::before {
+.b-page .tab h4::before {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   content: '';
   width: 16px;
   height: 16px;
@@ -955,21 +955,40 @@ header .header_top .lang-wrap ul.lang li:hover {
   background-color: #BB3D44;
   display: block;
   top: 50%;
-  left: -36px;
+  left: -16px;
   margin-top: -8px;
+  opacity: 0;
+}
+
+.b-page .tab.active {
+  background-color: #F7F7F7;
+}
+
+.b-page .tab.active h4::before {
+  left: -36px;
+  opacity: 1;
 }
 
 .b-page .tab:hover {
   background-color: #F7F7F7;
 }
 
+.b-page .tab:hover h4 {
+  color: #BB3D44;
+}
+
 .b-page_content-wrap {
   padding: 60px;
   max-width: 1024px;
   text-align: justify;
+}
+
+.b-page_content-wrap.b-page_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  max-width: 90%;
 }
 
 .b-page_content-wrap p {
@@ -997,16 +1016,47 @@ header .header_top .lang-wrap ul.lang li:hover {
   margin-right: 20px;
 }
 
+.b-page_content {
+  padding-left: 150px;
+}
+
 .b-page_left {
   width: 35%;
 }
 
 .b-page_right {
   width: 75%;
+  padding: 75px;
 }
 
-.b-page_content {
-  padding-left: 150px;
+.b-page_menu {
+  background-color: #ffffff;
+  padding: 75px;
+  position: relative;
+}
+
+.b-page_menu::after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  display: block;
+}
+
+.b-page_menu ul li {
+  border-radius: 8px;
+  border-left: 8px solid transparent;
+  text-align: left;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.b-page_menu ul li:hover {
+  background-color: #D8D8E3;
+  border-left: 8px solid #BB3D44;
 }
 
 footer {

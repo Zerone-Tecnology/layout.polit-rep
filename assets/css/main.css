@@ -148,7 +148,7 @@ h5 {
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
   width: 1770px;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,6 +189,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  background-color: #F7F7F7;
 }
 
 a {

@@ -45,6 +45,7 @@ a.next
 header
   margin: 0 auto
   padding: 0 60px
+  background-color: #ffffff
   .header_top
     display: flex
     flex-direction: row
@@ -390,25 +391,35 @@ header
       margin: 15px auto
       display: inline-block
       position: relative
+      &::before
+        transition: all .5s ease
+        content: ''
+        width: 16px
+        height: 16px
+        position: absolute
+        background-color: $accent
+        display: block
+        top: 50%
+        left: -16px
+        margin-top: -8px
+        opacity: 0
   .tab.active
     background-color: #F7F7F7
     h4::before
-      content: ''
-      width: 16px
-      height: 16px
-      position: absolute
-      background-color: $accent
-      display: block
-      top: 50%
       left: -36px
-      margin-top: -8px
+      opacity: 1
   .tab:hover
     background-color: #F7F7F7
+    h4
+      color: $accent
   &_content-wrap
     padding: 60px
     max-width: 1024px
     text-align: justify
-    display: flex
+    &.b-page_row
+      display: flex
+      padding: 0
+      max-width: 90%
     p
       text-align: justify
     ul
@@ -422,12 +433,35 @@ header
     .tab-content
       margin-left: 20px
       margin-right: 20px
+  &_content
+    padding-left: 150px
   &_left
     width: 35%
   &_right
     width: 75%
-  &_content
-    padding-left: 150px
+    padding: 75px
+  &_menu
+    background-color: #ffffff
+    padding: 75px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      right: 100%
+      top: 0
+      width: 100%
+      background-color: #fff
+      height: 100%
+      display: block
+    ul
+      li
+        border-radius: 8px
+        border-left: 8px solid transparent
+        text-align: left
+        transition: all .15s ease
+        &:hover
+          background-color: #D8D8E3
+          border-left: 8px solid $accent
 
 footer
   background-color: $color
