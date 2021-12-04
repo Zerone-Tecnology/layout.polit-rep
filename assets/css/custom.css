@@ -159,6 +159,12 @@ h5 {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 1770px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 1024px;
@@ -1059,6 +1065,44 @@ header .header_top .lang-wrap ul.lang li:hover {
   border-left: 8px solid #BB3D44;
 }
 
+.news-list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 80px -5px 50px;
+}
+
+.news-list-wrap .news {
+  width: calc(1/4*100% - 10px);
+  margin: 0 5px 30px;
+  background-color: #E3E2E7;
+}
+
+.news-list-wrap .news .img-wrap {
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.news-list-wrap .news .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.news-list-wrap .news .content-wrap {
+  padding: 15px 15px 45px;
+}
+
+.news-list-wrap .news .title {
+  text-transform: uppercase;
+}
+
+.news-list-wrap .news .date {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
 footer {
   background-color: #2F374A;
   color: #ffffff;
@@ -1118,3 +1162,4 @@ footer .right-wrap .copy img {
   margin-left: 5px;
   vertical-align: bottom;
 }
+/*# sourceMappingURL=custom.css.map */
