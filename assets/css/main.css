@@ -161,11 +161,11 @@ h5 {
 
 @media only screen and (max-width: 1770px) {
   .container {
-    width: 1200px;
+    width: 1440px;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
   .container {
     width: 1024px;
   }
@@ -295,3 +295,4 @@ form input[type="text"] {
   font-size: 18px;
   color: #ffffff;
 }
+/*# sourceMappingURL=main.css.map */
