@@ -159,6 +159,12 @@ h5 {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 1770px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 1024px;
@@ -238,32 +244,28 @@ ul ul {
 
 h1 {
   font-size: 54px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
 }
 
 h2 {
   font-size: 42px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 30px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 27px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
 }
 
 h5 {
   font-size: 22px;
+}
+
+h1, h2, h3, h4, h5 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 p {

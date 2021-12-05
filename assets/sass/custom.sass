@@ -347,7 +347,7 @@ header
     padding: 60px
     ul 
       li
-        padding: 0 0 0 15px
+        padding: 0 10px 0 15px
         margin: 0
         position: relative
         &::before
@@ -369,6 +369,8 @@ header
     margin: 0 0 0 150px
     padding-bottom: 50px
     text-transform: uppercase
+  .title-100
+    max-width: 100%
   &_desc
     width: 50%
     min-width: 450px
@@ -435,6 +437,30 @@ header
       margin-right: 20px
   &_content
     padding-left: 150px
+    line-height: 1.6em
+    ul li
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: -5px
+        top: 25px
+        width: 8px
+        height: 8px
+        background: $color
+    table
+      width: 100%
+      border-top: 8px solid $color
+      th
+        color: $color
+        font-size: 16px
+        text-align: left
+      td
+        border-bottom: 1px solid $color
+        padding: 0 5px
+      td, p
+        text-align: left
+        font-size: 16px
   &_left
     width: 35%
   &_right
@@ -462,7 +488,63 @@ header
         &:hover
           background-color: #D8D8E3
           border-left: 8px solid $accent
-
+.news-list-wrap
+  display: flex
+  flex-wrap: wrap
+  margin: 80px -15px 50px
+  .news
+    width: calc(1/4*100% - 30px)
+    margin: 0 15px 30px
+    background-color: #E3E2E7
+    .img-wrap
+      overflow: hidden
+      max-height: 300px
+      img
+        width: 100%
+        height: 100%
+    .content-wrap
+      padding: 15px 15px 45px
+    .title
+      text-transform: uppercase
+    .date
+      font-size: 16px
+      margin-top: 15px
+.p-50
+  padding-top: 50px
+.p-cards
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -15px
+  .p-card
+    background-color: #EAE9EC
+    width: calc( 100%/2 - 30px )
+    text-align: left
+    margin: 0 15px 30px
+    min-height: 270px
+    display: flex
+    flex-direction: column
+    justify-content: end
+    .title
+      padding: 15px
+      margin-bottom: 0
+      text-transform: uppercase
+    .name
+      padding: 15px
+    p
+      margin: 0
+  &.cards-4 .p-card
+    width: calc( 100%/4 - 40px )
+  &_list .p-card
+    width: calc( 100%/2 - 38px )
+    min-height: inherit
+    border: 4px solid transparent
+    &:hover
+      border: 4px solid #E3E2E7
+      background-color: #ffffff
+    a
+      padding: 15px
+      &:hover
+        color: $accent
 footer
   background-color: $color
   color: #ffffff
