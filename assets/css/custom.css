@@ -910,6 +910,10 @@ header .header_top .lang-wrap ul.lang li:hover {
   text-transform: uppercase;
 }
 
+.b-page .title-100 {
+  max-width: 100%;
+}
+
 .b-page_desc {
   width: 50%;
   min-width: 450px;
@@ -1040,6 +1044,12 @@ header .header_top .lang-wrap ul.lang li:hover {
 .b-page_content table {
   width: 100%;
   border-top: 8px solid #2F374A;
+}
+
+.b-page_content table th {
+  color: #2F374A;
+  font-size: 16px;
+  text-align: left;
 }
 
 .b-page_content table td {
