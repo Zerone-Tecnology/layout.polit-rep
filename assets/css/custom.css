@@ -167,11 +167,11 @@ h5 {
 
 @media only screen and (max-width: 1440px) {
   .container {
-    width: 1024px;
+    width: 1228px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1228px) {
   .container {
     width: 768px;
   }
@@ -1266,4 +1266,3 @@ footer .right-wrap .copy img {
   margin-left: 5px;
   vertical-align: bottom;
 }
-/*# sourceMappingURL=custom.css.map */
