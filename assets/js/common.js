@@ -6,6 +6,14 @@ $('.slider-wrap').owlCarousel({
   autoplayTimeout: 5000
 });
 
+$('.news-slider').owlCarousel({
+  items: 1,
+  nav: false,
+  navText : ["<i class='arr-left'></i>","<i class='arr-right'></i>"],
+  autoplay: true,
+  autoplayTimeout: 5000
+});
+
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
 
