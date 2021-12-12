@@ -51,7 +51,7 @@ header
     flex-direction: row
     align-items: stretch
     .logo-wrap
-      width: 50%
+      width: 40%
       display: flex
       padding: 15px 0
       .logo
@@ -64,7 +64,7 @@ header
         text-transform: uppercase
         width: 380px
     .menu-wrap
-      width: 40%
+      width: 50%
       display: flex
       align-items: center
       ul
@@ -84,6 +84,7 @@ header
             transform: rotate(0deg)
         li.parent-top
           text-align: right
+          margin-left: 60px
           span
             width: 5px
             height: 5px
@@ -120,6 +121,23 @@ header
             background: #E8E6EB
           &:hover
             background: #E8E6EB
+#top-menu-wrap
+  position: fixed
+  z-index: 9
+  // display: none
+  top: 0
+  left: 0
+  width: 100%
+  background-color: #fff
+  .cols
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  .col
+    width: 20%
+    margin: 15px
+  .col-2
+    width: 50%
 #s-two,#s-three
   background: #E2E1E4
 #s-one,#s-two,#s-three

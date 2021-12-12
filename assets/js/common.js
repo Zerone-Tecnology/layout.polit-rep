@@ -30,3 +30,8 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+$('.top-menu-btn').on('click', function(){
+  console.log('click');
+  $('#top-menu-wrap').toggle();
+})

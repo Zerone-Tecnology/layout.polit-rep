@@ -374,7 +374,7 @@ header .header_top {
 }
 
 header .header_top .logo-wrap {
-  width: 50%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +397,7 @@ header .header_top .logo-wrap .logo-text {
 }
 
 header .header_top .menu-wrap {
-  width: 40%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,6 +428,7 @@ header .header_top .menu-wrap ul li.parent::before {
 
 header .header_top .menu-wrap ul li.parent-top {
   text-align: right;
+  margin-left: 60px;
 }
 
 header .header_top .menu-wrap ul li.parent-top span {
@@ -490,6 +491,36 @@ header .header_top .lang-wrap ul.lang li.active {
 
 header .header_top .lang-wrap ul.lang li:hover {
   background: #E8E6EB;
+}
+
+#top-menu-wrap {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+#top-menu-wrap .cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#top-menu-wrap .col {
+  width: 20%;
+  margin: 15px;
+}
+
+#top-menu-wrap .col-2 {
+  width: 50%;
 }
 
 #s-two, #s-three {
@@ -1266,3 +1297,4 @@ footer .right-wrap .copy img {
   margin-left: 5px;
   vertical-align: bottom;
 }
+/*# sourceMappingURL=custom.css.map */
