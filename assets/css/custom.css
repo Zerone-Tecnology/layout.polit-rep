@@ -352,7 +352,7 @@ header .header_top .logo-wrap .logo-text {
 }
 
 header .header_top .menu-wrap {
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1223,3 +1223,4 @@ footer .copy img {
   margin-left: 5px;
   vertical-align: bottom;
 }
+/*# sourceMappingURL=custom.css.map */
