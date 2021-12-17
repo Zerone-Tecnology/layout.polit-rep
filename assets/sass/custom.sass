@@ -44,14 +44,13 @@ a.next
   transform: rotate(180deg)
 header
   margin: 0 auto
-  padding: 0 60px
   background-color: #ffffff
   .header_top
     display: flex
     flex-direction: row
     align-items: stretch
     .logo-wrap
-      width: 50%
+      width: 40%
       display: flex
       padding: 15px 0
       .logo
@@ -64,7 +63,7 @@ header
         text-transform: uppercase
         width: 380px
     .menu-wrap
-      width: 40%
+      width: 50%
       display: flex
       align-items: center
       ul
@@ -84,6 +83,7 @@ header
             transform: rotate(0deg)
         li.parent-top
           text-align: right
+          margin-left: 60px
           span
             width: 5px
             height: 5px
@@ -120,6 +120,23 @@ header
             background: #E8E6EB
           &:hover
             background: #E8E6EB
+#top-menu-wrap
+  position: fixed
+  z-index: 9
+  // display: none
+  top: 0
+  left: 0
+  width: 100%
+  background-color: #fff
+  .cols
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  .col
+    width: 20%
+    margin: 15px
+  .col-2
+    width: 50%
 #s-two,#s-three
   background: #E2E1E4
 #s-one,#s-two,#s-three
@@ -344,7 +361,7 @@ header
 #s_head
   background: linear-gradient(131.57deg, #F8F8F8 2.48%, #D2D0D7 96.33%)
   .breadcrumbs-wrap
-    padding: 60px
+    margin: 60px 0
     ul 
       li
         padding: 0 10px 0 15px
@@ -363,12 +380,8 @@ header
           a
             color: #6B6E75
             font-size: 16px
-.block-page
-  padding: 0 60px
 .b-page
   &_title
-    max-width: 750px
-    margin: 0 0 0 150px
     padding-bottom: 50px
     text-transform: uppercase
   .title-100
@@ -438,8 +451,6 @@ header
       margin-left: 20px
       margin-right: 20px
   &_content
-    padding-left: 150px
-    line-height: 1.6em
     ul li
       position: relative
       &::before
@@ -550,37 +561,27 @@ header
 footer
   background-color: $color
   color: #ffffff
-  padding: 55px
   min-height: 200px
   .title
     font-size: 20px
     font-weight: 700
   .left-wrap
     .contact-wrap
-      font-weight: 400
-      .b-block
-        position: relative
-        width: 100%
-        display: block
+      p
         float: left
-        .title
-          width: 150px
-        p
-          float: left
       a
         color: #fff
         display: block
         margin: 10px 0
-  .right-wrap
+  .text-right
     text-align: right
+  .copy
+    font-size: 14px
     color: rgba(#FFFFFF, .5)
-    .counter-wrap
-      margin-bottom: 50px
-    .copy
-      font-size: 14px
-      a
-        color: rgba(#FFFFFF, .5)
-        line-height: .9em
-      img
-        margin-left: 5px
-        vertical-align: bottom
+    a
+      color: rgba(#FFFFFF, .5)
+      line-height: .9em
+    img
+      margin-left: 5px
+      vertical-align: bottom
+
