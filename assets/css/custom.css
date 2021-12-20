@@ -887,6 +887,11 @@ header .header_top .lang-wrap ul.lang li:hover {
   font-size: 16px;
 }
 
+#s_content {
+  text-align: justify;
+  margin: 60px 0;
+}
+
 .b-page_title {
   padding-bottom: 50px;
   text-transform: uppercase;
@@ -1078,13 +1083,18 @@ header .header_top .lang-wrap ul.lang li:hover {
   border-left: 8px solid #BB3D44;
 }
 
+.b-page_menu ul li.item-selected {
+  background-color: #D8D8E3;
+  border-left: 8px solid #BB3D44;
+}
+
 .news-list-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 80px -15px 50px;
+  margin: 15px -15px 50px;
 }
 
 .news-list-wrap .news {

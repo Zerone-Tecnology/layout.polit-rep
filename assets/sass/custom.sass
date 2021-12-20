@@ -380,6 +380,9 @@ header
           a
             color: #6B6E75
             font-size: 16px
+#s_content
+  text-align: justify
+  margin: 60px 0
 .b-page
   &_title
     padding-bottom: 50px
@@ -501,10 +504,14 @@ header
         &:hover
           background-color: #D8D8E3
           border-left: 8px solid $accent
+        &.item-selected
+          background-color: #D8D8E3
+          border-left: 8px solid $accent
+
 .news-list-wrap
   display: flex
   flex-wrap: wrap
-  margin: 80px -15px 50px
+  margin: 15px -15px 50px
   .news
     width: calc(1/4*100% - 30px)
     margin: 0 15px 30px
