@@ -1266,3 +1266,217 @@ footer .right-wrap .copy img {
   margin-left: 5px;
   vertical-align: bottom;
 }
+
+
+/* MegaMenu styles */
+
+body.stop-scrolling {
+  overflow: hidden;
+}
+
+.header-fixed {
+  position: fixed;
+  z-index: 10000;
+  width: calc(100% - 120px);
+}
+
+header {
+  position: fixed;
+  z-index: 10000;
+  width: calc(100% - 120px);
+}
+
+header.position-fixed {
+  width: calc(100% - 120px);
+  position: fixed;
+  z-index: 10000;
+}
+
+.megamenu.open_with_animation {
+  -webkit-clip-path: circle(100%);
+  clip-path: circle(100%);
+}
+
+.megamenu {
+  position: fixed;
+  overflow:hidden;
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 135px 60px 0px;
+  top: 0;
+  bottom: 0;
+  -webkit-clip-path: circle(0% at 5% 10%);
+  clip-path: circle(0% at 72% 10%);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
+  display: block;
+  z-index: 10;
+  background-color: #e7e6eb;
+}
+
+.megamenu--wrapper {
+  display: flex;
+}
+
+.megamenu--wrapper h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.megamenu .megamenu--wrapper h2 {
+  color: #0E1320;
+  line-height: 58px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 110px;
+}
+
+.megamenu--wrapper-inner {
+  display: flex;
+  margin-top: 110px;
+}
+
+.megamenu--wrapper-inner, .megamenu--wrapper h4 {
+  margin-top: 120px;
+}
+
+.megamenu--right-side h4:nth-child(2), .megamenu--right-side h4:nth-child(3) {
+  margin-top: 110px;
+}
+
+.megamenu--wrapper .megamenu--center h4:nth-child(2) {
+  margin-top: 150px;
+}
+
+.megamenu--wrapper h4:nth-child(3), .megamenu--wrapper h4:nth-child(4) {
+  margin-top: 130px;
+}
+
+.megamenu--right-side h4:nth-child(3), .megamenu--right-side h4:nth-child(4) {
+  margin-top: 110px !important;
+}
+
+.megamenu--center h4 {
+  max-width: 305px;
+}
+
+.megamenu--right-side h4 {
+  max-width: 400px;
+}
+
+.megamenu--wrapper .megamenu--left-side ul li, .megamenu--wrapper .megamenu--center ul li, .megamenu--wrapper .megamenu--right-side ul li {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.megamenu--wrapper ul {
+  display: block;
+}
+
+.megamenu--wrapper-inner h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 20px;
+}
+
+.megamenu--wrapper-inner .inner-left-side, .megamenu--wrapper-inner .inner-right-side {
+  width: 50%;
+}
+
+.megamenu--wrapper-inner ul li {
+  padding: 10px;
+}
+
+.megamenu--wrapper-inner ul li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0E1320;
+}
+
+.megamenu .megamenu--wrapper .megamenu--left-side {
+  width: 50%;
+} 
+
+.megamenu .megamenu--wrapper .megamenu--left-side h2 {
+  max-width: 620px;
+}
+
+.megamenu .megamenu--wrapper .megamenu--center {
+  width: 30%;
+} 
+
+.megamenu .megamenu--wrapper .megamenu--right-side {
+  width: 30%;
+}
+
+.parent-top {
+  cursor: pointer;
+}
+
+.center-arrow.close-btn {
+  display: none !important;
+}
+
+.left-arrow.close-btn, .right-arrow.close-btn, .left-arrow.close-btn:before, .left-arrow.close-btn:after, .right-arrow.close-btn:before, .right-arrow.close-btn:after {
+  height: 10px !important;
+  border-radius: 0px !important;
+}
+
+.left-arrow.close-btn:after {
+  border-top-right-radius: 50% !important;
+  border-top-left-radius: 50% !important;
+}
+
+.left-arrow.close-btn:before {
+  border-bottom-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+} 
+
+.right-arrow.close-btn:after {
+  border-top-right-radius: 50% !important;
+  border-top-left-radius: 50% !important;
+}
+
+.right-arrow.close-btn:before {
+  border-bottom-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+} 
+
+.left-arrow.close-btn {
+  transition: 0.5s ;
+  transform: rotate(45deg);
+  left: 10px;
+}
+
+.right-arrow.close-btn {
+  transition: 0.5s;
+  transform: rotate(-45deg);
+}
+
+.parent-top span {
+  transition: 0.5s;
+}
+
+#s-one {
+  padding-top: 114px;
+}
+
+.last {
+  margin-top: 86px;
+}
+
+.last li {
+  padding-top: 20px !important;
+}
+
+/* End MegaMenu styles */

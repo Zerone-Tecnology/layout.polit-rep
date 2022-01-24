@@ -29,4 +29,22 @@ tabs.forEach(tab => {
     tab.classList.add('active')
     target.classList.add('active')
   })
-})
+});
+
+$(".parent-top" ).click(function() {
+  $('body').toggleClass('stop-scrolling')
+  $("header").toggleClass('position-fixed');
+  $('.megamenu').toggleClass('open_with_animation');
+  $('.parent-top').children('span').toggleClass('close-btn');
+});
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+
+  if(height > 1){
+    $('header').removeClass('header-fixed');
+    $('#s-one').addClass('padding-top');
+  } else{
+    $('header').addClass('header-fixed');
+    $('#s-one').removeClass('padding-top');
+  }
+});
