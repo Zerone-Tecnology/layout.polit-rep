@@ -48,3 +48,7 @@ $(window).scroll(function() {
     $('#s-one').removeClass('padding-top');
   }
 });
+
+
+
+
