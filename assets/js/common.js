@@ -32,11 +32,19 @@ tabs.forEach(tab => {
 });
 
 $(".parent-top" ).click(function() {
+
   $('body').toggleClass('stop-scrolling')
   $("header").toggleClass('position-fixed');
   $('.megamenu').toggleClass('open_with_animation');
   $('.parent-top').children('span').toggleClass('close-btn');
+
+  var w = $(window).width(); // Получаем ширину окна
+
+  if (w <= 1024) {
+      $("header").toggleClass('opened');
+  }
 });
+
 $(window).scroll(function() {
   var height = $(window).scrollTop();
 
@@ -51,4 +59,21 @@ $(window).scroll(function() {
 
 
 
+// Scroll
 
+var $menu = $('.megamenu');
+
+$('.megamenu').scroll(function() {
+  var w2 = $(window).width(); // Получаем ширину окна
+
+  if (w2 <= 1024) {
+ 
+    $menu.css({top: $(this).scrollTop()>100 ? "0px":"270px"});
+    $menu.css({top: $(this).scrollTop()>100 ? "0px":"270px"});
+    if ( $(this).scrollTop()>100) {
+      $('header').removeClass('opened');
+    } else {
+      $('header').addClass('opened');
+    }
+  }
+});
